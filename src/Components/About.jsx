@@ -50,7 +50,7 @@ const About = () => {
         
 
         <h2>About Myself 🤓</h2>
-        <p className="large">{description}</p>
+        <p  className="large">{description}</p>
         <hr />
         <ul className="ul">
           {skillsList.map((skill) => (

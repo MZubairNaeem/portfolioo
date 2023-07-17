@@ -9,6 +9,9 @@ import React from "react";
 import arrowSvg from "../images/down-arrow.svg";
 import PropTypes from "prop-types";
 
+
+import './home.css';
+
 /**
  * Home background image
  *
@@ -29,8 +32,12 @@ const Home = ({ name, title }) => {
     <section id="home" className="min-height">
       <img className="background" src={image} alt="" />
       <div style={{ position: "absolute", top: "5rem", left: "2rem",  }}>
-        <h1 style={{ color: "white" ,width: "35rem"}}>{name}</h1>
-        <h2 style={{ color: "white" ,width: "20rem"}}>{title}</h2>
+        <h1 className="name"
+        //  style={{ color: "white" ,width: "35rem"}}
+         >{name}</h1>
+        <h2 className="title" 
+        // style={{ color: "white" ,width: "20rem"}}
+        >{title}</h2>
       </div>
       <div style={{ position: "absolute", bottom: "3rem", left: "50%" }}>
         <img src={arrowSvg} style={{ height: "3rem", width: "3rem" }} alt={imageAltText} />

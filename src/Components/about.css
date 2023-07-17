@@ -42,4 +42,13 @@
           color: white;
          
   }
+
+  .ul{
+    text-align: left;
+            columns: 2;
+            font-size: 1.25rem;
+            margin: 4rem 1rem;
+            gap: 3rem;
+}
+
   }
