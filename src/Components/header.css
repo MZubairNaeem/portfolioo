@@ -1,0 +1,98 @@
+
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background: #1d252e;
+    padding: 1rem;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.unOrder {
+    padding: 5px;
+    margin: 0px;
+    list-style: none;
+
+}
+ .list {
+   display: inline-block;
+   margin-right: 50px;
+   line-height: 23px;
+}
+ 
+
+
+#checkbtn {
+    font-size: 30px;
+    color: white;
+    line-height: 80px;
+    margin-left: 380px;
+    cursor: pointer;
+    display: none;
+}
+#cancel {
+    font-size: 30px;
+    color: white;
+    line-height: 80px;
+    margin-left: 380px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+
+
+
+@media (max-width: 952px) {
+     a {
+        font-size: 16px;
+ }
+}
+@media (max-width: 858px){
+    #checkbtn {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        background-color: #1d252e;
+        color: white;
+    }
+
+    .unOrder {
+        position:fixed;
+        width: 100%;
+        height: 400px;
+        background-color: #1d252e;
+        top: 60px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+     }
+
+     .list {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+     }
+
+     a {
+        font-size: 20px;
+    } 
+
+
+
+    #check:checked ~ .unOrder{
+        left: 0;
+    }
+
+    #check:checked ~ label #checkbtn{
+        display: none;
+    }
+
+    #check:checked ~ label #cancel{
+        display: block;
+    }
+}

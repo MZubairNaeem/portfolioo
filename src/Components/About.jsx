@@ -5,7 +5,7 @@
  */
 
 import React from "react";
-
+import './about.css';
 /**
  * About background image
  *
@@ -40,32 +40,19 @@ const skillsList = ["Flutter", "Laravel", "Firebase", "Android", "Jetpack Compos
 const detailOrQuote =
   " I have experience in building mobile applications using Flutter and Android. I also have experience in building web applications using Laravel and MySql.";
 
+
+
 const About = () => {
   return (
-    <section className="padding" id="about">
+    <section className="padding" >
       <img className="background" src={image} alt={imageAltText} />
-      <div
-        style={{
-          backgroundColor: "#14191d",
-          width: "50%",
-          padding: "4rem",
-          margin: "3rem auto",
-          textAlign: "center",
-          color: "white",
-        }}
-      >
+      <div  className="about">
+        
+
         <h2>About Myself 🤓</h2>
         <p className="large">{description}</p>
         <hr />
-        <ul
-          style={{
-            textAlign: "left",
-            columns: 2,
-            fontSize: "1.25rem",
-            margin: "2rem 3rem",
-            gap: "3rem",
-          }}
-        >
+        <ul className="ul">
           {skillsList.map((skill) => (
             <li key={skill}>{skill}</li>
           ))}

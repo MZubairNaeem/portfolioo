@@ -5,26 +5,28 @@
  * user scrolls so that they can constantly reach any part of your page.
  */
 import React from "react";
+import './header.css';
+
+// imported react icons
+import {BiMenu} from 'react-icons/bi';
+import {BiX} from 'react-icons/bi';
 
 const Header = () => {
   return (
-    <div
-      style={{
-        position: "fixed",
-        display: "flex",
-        justifyContent: "center",
-        gap: "2rem",
-        background: "#1d252e",
-        padding: "1rem",
-        top: 0,
-        width: "100%",
-        zIndex: 10,
-      }}
-    >
-      <a href="#home">Home 🏡</a>
-      <a href="#about">About ℹ️</a>
-      <a href="#portfolio">Portfolio 📜</a>
-      <a href="#footer">Contact 📱</a>
+    <div className="header">
+      <input type="checkbox" id="check" />
+        <label for="check">
+            <BiMenu id="checkbtn" />
+            <BiX id="cancel" />
+        </label>
+
+        <ul className="unOrder">
+      <li className="list"><a href="#home">Home 🏡</a></li>
+      <li className="list"><a href="#about">About ℹ️</a></li>
+      <li className="list"><a href="#portfolio">Portfolio 📜</a></li>
+      <li className="list"><a href="#footer">Contact 📱</a></li>
+      </ul>
+
     </div>
   );
 };
