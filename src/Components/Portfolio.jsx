@@ -62,14 +62,6 @@ const Portfolio = () => {
     <section className="padding" id="portfolio" style={{ backgroundColor: '#14191d', color: "white"}}>
       <h2 style={{ textAlign: "center" }}>Portfolio</h2>
       <div className="block" >
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
-          <img
-          className="img"
-            src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
-            alt={imageAltText}
-          />
-        </div>
         <div className="container">
           {projectList.map((project) => (
             <div className="box" key={project.title}>
